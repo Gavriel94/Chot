@@ -9,8 +9,10 @@ import SwiftUI
 
 struct UserProfile: View {
     @EnvironmentObject var modelData: ModelData
+    @State private var logout: Bool = false
     
     var body: some View {
+        NavigationStack {
             VStack(alignment: .center) {
                 
                 HStack {
@@ -21,7 +23,7 @@ struct UserProfile: View {
                     Spacer()
                 }
                 modelData.profile.profileImage
-                    .padding()
+                
                 
                 Divider()
                 
@@ -44,7 +46,7 @@ struct UserProfile: View {
                         Text(modelData.profile.aiPersonality.rawValue)
                             .bold()
                             .font(.title)
-                            .padding()
+                            .padding(.leading)
                         Spacer()
                     }
                     
@@ -59,7 +61,24 @@ struct UserProfile: View {
                 }
                 
                 Spacer()
+                
+                Button {
+                    logout = true
+                } label: {
+                    Text("Log Out")
+                        .font(.subheadline)
+                        .foregroundColor(.white)
+                        .frame(width: 300, height: 50)
+                        .background(.red)
+                        .cornerRadius(10)
+                }
+                .navigationDestination(isPresented: $logout) {
+                    Login()
+                }
+                
+                Spacer()
             }
+        }
     }
 }
 

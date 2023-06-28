@@ -12,41 +12,88 @@ struct CreateProfile: View {
     @EnvironmentObject var modelData: ModelData
     @State var imageSelection: PhotosPickerItem?
     
-    @State private var nameWritten: Bool = false
+    @State private var username: String = ""
+    @State private var password: String = ""
+    @State private var passwordCheck: String = ""
+    @State private var showPassword: Bool = false
     
+    @State private var signIn: Bool = false
+
     var body: some View {
-    
         NavigationStack {
-            ProfileImage(profileImage: Image("Chot"))
-            
-            Text("What should Chot call you?")
-                .font(.title)
+            VStack {
+                Spacer()
+                
+                Text("Chot")
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
+                    .padding()
+                    .shadow(radius: 0.9)
+                
+                
+                ProfileImage(profileImage: Image("Chot"))
+                
+                Spacer()
+                
+                VStack {
+                    TextField("Your name for Chot", text: $username)
+                        .textFieldStyle(.roundedBorder)
+                        .cornerRadius(10)
+                    Group {
+                        if(showPassword) {
+                            TextField("Create Password", text: $password)
+                                .textFieldStyle(.roundedBorder)
+                                .cornerRadius(10)
+                            TextField("Confirm Password", text: $passwordCheck)
+                                .textFieldStyle(.roundedBorder)
+                                .cornerRadius(10)
+                        } else {
+                            SecureField("Create Password", text: $password)
+                                .textFieldStyle(.roundedBorder)
+                                .cornerRadius(10)
+                            SecureField("Confirm Password", text: $passwordCheck)
+                                .textFieldStyle(.roundedBorder)
+                                .cornerRadius(10)
+                        }
+                    }
+                    Button {
+                        showPassword.toggle()
+                    } label: {
+                        Text(showPassword ? "Hide Password" : "Show Password")
+                        Image(systemName: showPassword ? "eye.slash" : "eye")
+                    }
+                    .foregroundColor(.blue)
+                    .padding()
+                }
                 .padding()
-            Spacer()
-            HStack {
-                TextField("Your name", text: $modelData.profile.username)
-                    .textFieldStyle(.roundedBorder)
-                Divider()
-                Text("\(modelData.profile.username.count)/3")
-                    .font(.subheadline)
+                
+                Spacer()
+                
+                Button {
+                    modelData.profile.username = username
+                    modelData.profile.password = password
+                    signIn = true
+                } label: {
+                    Text("Sign in")
+                        .font(.headline)
+                        .padding()
+                        .frame(width: 300, height: 50)
+                        .background(.green)
+                        .cornerRadius(15.0)
+                }
+                .disabled(password != passwordCheck || username.count < 3 || password.count < 3)
+                .navigationDestination(isPresented: $signIn) {
+                              AppHome()
+                }
+                
+                Spacer()
+                
             }
-            .frame(height: 0.3)
-            Spacer()
+            .background(LinearGradient(gradient: Gradient(colors: [.purple, .white]), startPoint: .top, endPoint: .bottom))
             
-            Button {
-                nameWritten = true
-            } label: {
-                Image(systemName: "checkmark.circle")
-                    .imageScale(.large)
-            }
-            .padding()
-            .disabled(modelData.profile.username.count < 3)
-            .navigationTitle("ChotAI")
-            .navigationDestination(isPresented: $nameWritten) {
-              AppHome()
-            }
+            .edgesIgnoringSafeArea(.all)
         }
-        .padding()
+        .tint(.white)
     }
     
     struct CreateProfile_Previews: PreviewProvider {

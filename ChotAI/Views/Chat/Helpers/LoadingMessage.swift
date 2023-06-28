@@ -9,12 +9,16 @@ import SwiftUI
 
 struct LoadingMessage: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ProgressView()
+            .progressViewStyle(CircularProgressViewStyle(tint: .white))
+            .padding()
+            .background(.green)
+            .cornerRadius(24)
     }
-}
-
-struct LoadingMessage_Previews: PreviewProvider {
-    static var previews: some View {
-        LoadingMessage()
+    
+    struct LoadingMessage_Previews: PreviewProvider {
+        static var previews: some View {
+            LoadingMessage()
+        }
     }
 }

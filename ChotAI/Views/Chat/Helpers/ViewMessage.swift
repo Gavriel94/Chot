@@ -29,8 +29,7 @@ struct ViewMessage: View {
                 .padding()
                 .background(.purple)
                 .cornerRadius(24)
-            }
-            if(message.sender == .chot) {
+            } else {
                 VStack(alignment: .leading) {
                     
                     Text(message.message)

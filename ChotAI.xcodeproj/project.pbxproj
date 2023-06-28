@@ -7,18 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		163BA33E2A4C774E00839902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 163BA33D2A4C774E00839902 /* LaunchScreen.storyboard */; };
 		16E89E422A4384A000001F73 /* ChotAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E89E412A4384A000001F73 /* ChotAIApp.swift */; };
 		16E89E442A4384A000001F73 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E89E432A4384A000001F73 /* ContentView.swift */; };
 		16E89E462A4384A100001F73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16E89E452A4384A100001F73 /* Assets.xcassets */; };
 		16E89E492A4384A100001F73 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16E89E482A4384A100001F73 /* Preview Assets.xcassets */; };
+		16E89E502A4384B100001F73 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E89E4F2A4384B100001F73 /* ModelData.swift */; };
+		16E89E572A43853100001F73 /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E89E562A43853100001F73 /* ProfileImage.swift */; };
+		16E89E5A2A43856100001F73 /* ModelProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E89E592A43856100001F73 /* ModelProfile.swift */; };
+		16E89E5C2A43858E00001F73 /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E89E5B2A43858E00001F73 /* ProfileHost.swift */; };
+		16E89E5E2A43859900001F73 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E89E5D2A43859900001F73 /* UserProfile.swift */; };
+		16E89E602A4385A900001F73 /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E89E5F2A4385A900001F73 /* ProfileEditor.swift */; };
+		16E89E652A4386B100001F73 /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 16E89E642A4386B100001F73 /* OpenAIKit */; };
+		16E89E672A438C0700001F73 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E89E662A438C0700001F73 /* Conversation.swift */; };
+		16E89E6A2A438FBB00001F73 /* ViewMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E89E692A438FBB00001F73 /* ViewMessage.swift */; };
+		16E89E6C2A43901200001F73 /* AIChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E89E6B2A43901200001F73 /* AIChat.swift */; };
+		16E89E6E2A4396CF00001F73 /* ModelMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E89E6D2A4396CF00001F73 /* ModelMessage.swift */; };
+		16F6D07D2A45C1EA00C0EAB6 /* LoadingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F6D07C2A45C1EA00C0EAB6 /* LoadingMessage.swift */; };
+		16F6D0822A4ADE5500C0EAB6 /* DeleteHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F6D0812A4ADE5500C0EAB6 /* DeleteHost.swift */; };
+		16F6D0842A4ADE5D00C0EAB6 /* DeleteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F6D0832A4ADE5D00C0EAB6 /* DeleteRow.swift */; };
+		16F6D0892A4B0B3F00C0EAB6 /* CreateProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F6D0882A4B0B3F00C0EAB6 /* CreateProfile.swift */; };
+		16F6D08B2A4B128900C0EAB6 /* AppHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F6D08A2A4B128900C0EAB6 /* AppHome.swift */; };
+		16F6D0912A4B5E3B00C0EAB6 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F6D0902A4B5E3B00C0EAB6 /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		163BA33D2A4C774E00839902 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		163BA33F2A4C83C600839902 /* .gitignore.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = .gitignore.md; sourceTree = "<group>"; };
 		16E89E3E2A4384A000001F73 /* ChotAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChotAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16E89E412A4384A000001F73 /* ChotAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChotAIApp.swift; sourceTree = "<group>"; };
 		16E89E432A4384A000001F73 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		16E89E452A4384A100001F73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16E89E482A4384A100001F73 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		16E89E4F2A4384B100001F73 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		16E89E562A43853100001F73 /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
+		16E89E592A43856100001F73 /* ModelProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProfile.swift; sourceTree = "<group>"; };
+		16E89E5B2A43858E00001F73 /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
+		16E89E5D2A43859900001F73 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		16E89E5F2A4385A900001F73 /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
+		16E89E662A438C0700001F73 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		16E89E692A438FBB00001F73 /* ViewMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMessage.swift; sourceTree = "<group>"; };
+		16E89E6B2A43901200001F73 /* AIChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIChat.swift; sourceTree = "<group>"; };
+		16E89E6D2A4396CF00001F73 /* ModelMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMessage.swift; sourceTree = "<group>"; };
+		16F6D07C2A45C1EA00C0EAB6 /* LoadingMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingMessage.swift; sourceTree = "<group>"; };
+		16F6D0812A4ADE5500C0EAB6 /* DeleteHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteHost.swift; sourceTree = "<group>"; };
+		16F6D0832A4ADE5D00C0EAB6 /* DeleteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteRow.swift; sourceTree = "<group>"; };
+		16F6D0882A4B0B3F00C0EAB6 /* CreateProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfile.swift; sourceTree = "<group>"; };
+		16F6D08A2A4B128900C0EAB6 /* AppHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHome.swift; sourceTree = "<group>"; };
+		16F6D0902A4B5E3B00C0EAB6 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16E89E652A4386B100001F73 /* OpenAIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +88,13 @@
 		16E89E402A4384A000001F73 /* ChotAI */ = {
 			isa = PBXGroup;
 			children = (
-				16E89E412A4384A000001F73 /* ChotAIApp.swift */,
-				16E89E432A4384A000001F73 /* ContentView.swift */,
+				16E89E6F2A439BA700001F73 /* Deprecated */,
+				16E89E612A4385F100001F73 /* Models */,
+				16E89E512A4384F900001F73 /* Views */,
 				16E89E452A4384A100001F73 /* Assets.xcassets */,
 				16E89E472A4384A100001F73 /* Preview Content */,
+				163BA33F2A4C83C600839902 /* .gitignore.md */,
+				163BA33D2A4C774E00839902 /* LaunchScreen.storyboard */,
 			);
 			path = ChotAI;
 			sourceTree = "<group>";
@@ -65,6 +105,109 @@
 				16E89E482A4384A100001F73 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		16E89E512A4384F900001F73 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				16E89E412A4384A000001F73 /* ChotAIApp.swift */,
+				16E89E432A4384A000001F73 /* ContentView.swift */,
+				16F6D08A2A4B128900C0EAB6 /* AppHome.swift */,
+				16E89E622A43861700001F73 /* Chat */,
+				16E89E582A43854100001F73 /* UserProfile */,
+				16E89E552A43852600001F73 /* Helpers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		16E89E552A43852600001F73 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				16E89E562A43853100001F73 /* ProfileImage.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		16E89E582A43854100001F73 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				16F6D0922A4B5F0F00C0EAB6 /* Profile Navigation */,
+				16F6D0862A4B0B2700C0EAB6 /* Host */,
+				16F6D0852A4B0B1C00C0EAB6 /* Edit */,
+			);
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		16E89E612A4385F100001F73 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				16E89E592A43856100001F73 /* ModelProfile.swift */,
+				16E89E4F2A4384B100001F73 /* ModelData.swift */,
+				16E89E6D2A4396CF00001F73 /* ModelMessage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		16E89E622A43861700001F73 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				16E89E6B2A43901200001F73 /* AIChat.swift */,
+				16E89E682A438FB100001F73 /* Helpers */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		16E89E682A438FB100001F73 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				16E89E692A438FBB00001F73 /* ViewMessage.swift */,
+				16F6D07C2A45C1EA00C0EAB6 /* LoadingMessage.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		16E89E6F2A439BA700001F73 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				16E89E662A438C0700001F73 /* Conversation.swift */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		16F6D0802A4ADE4500C0EAB6 /* Delete Chats */ = {
+			isa = PBXGroup;
+			children = (
+				16F6D0812A4ADE5500C0EAB6 /* DeleteHost.swift */,
+				16F6D0832A4ADE5D00C0EAB6 /* DeleteRow.swift */,
+			);
+			path = "Delete Chats";
+			sourceTree = "<group>";
+		};
+		16F6D0852A4B0B1C00C0EAB6 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				16E89E5F2A4385A900001F73 /* ProfileEditor.swift */,
+				16F6D0802A4ADE4500C0EAB6 /* Delete Chats */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		16F6D0862A4B0B2700C0EAB6 /* Host */ = {
+			isa = PBXGroup;
+			children = (
+				16E89E5D2A43859900001F73 /* UserProfile.swift */,
+				16E89E5B2A43858E00001F73 /* ProfileHost.swift */,
+			);
+			path = Host;
+			sourceTree = "<group>";
+		};
+		16F6D0922A4B5F0F00C0EAB6 /* Profile Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				16F6D0902A4B5E3B00C0EAB6 /* Login.swift */,
+				16F6D0882A4B0B3F00C0EAB6 /* CreateProfile.swift */,
+			);
+			path = "Profile Navigation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +226,9 @@
 			dependencies = (
 			);
 			name = ChotAI;
+			packageProductDependencies = (
+				16E89E642A4386B100001F73 /* OpenAIKit */,
+			);
 			productName = ChotAI;
 			productReference = 16E89E3E2A4384A000001F73 /* ChotAI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +257,9 @@
 				Base,
 			);
 			mainGroup = 16E89E352A4384A000001F73;
+			packageReferences = (
+				16E89E632A4386B100001F73 /* XCRemoteSwiftPackageReference "OpenAIKit" */,
+			);
 			productRefGroup = 16E89E3F2A4384A000001F73 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				163BA33E2A4C774E00839902 /* LaunchScreen.storyboard in Resources */,
 				16E89E492A4384A100001F73 /* Preview Assets.xcassets in Resources */,
 				16E89E462A4384A100001F73 /* Assets.xcassets in Resources */,
 			);
@@ -138,7 +288,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				16E89E442A4384A000001F73 /* ContentView.swift in Sources */,
+				16E89E6E2A4396CF00001F73 /* ModelMessage.swift in Sources */,
+				16F6D0842A4ADE5D00C0EAB6 /* DeleteRow.swift in Sources */,
+				16F6D0892A4B0B3F00C0EAB6 /* CreateProfile.swift in Sources */,
+				16E89E5C2A43858E00001F73 /* ProfileHost.swift in Sources */,
 				16E89E422A4384A000001F73 /* ChotAIApp.swift in Sources */,
+				16F6D0822A4ADE5500C0EAB6 /* DeleteHost.swift in Sources */,
+				16E89E5E2A43859900001F73 /* UserProfile.swift in Sources */,
+				16E89E5A2A43856100001F73 /* ModelProfile.swift in Sources */,
+				16E89E572A43853100001F73 /* ProfileImage.swift in Sources */,
+				16F6D07D2A45C1EA00C0EAB6 /* LoadingMessage.swift in Sources */,
+				16E89E6C2A43901200001F73 /* AIChat.swift in Sources */,
+				16E89E502A4384B100001F73 /* ModelData.swift in Sources */,
+				16E89E672A438C0700001F73 /* Conversation.swift in Sources */,
+				16E89E602A4385A900001F73 /* ProfileEditor.swift in Sources */,
+				16F6D0912A4B5E3B00C0EAB6 /* Login.swift in Sources */,
+				16F6D08B2A4B128900C0EAB6 /* AppHome.swift in Sources */,
+				16E89E6A2A438FBB00001F73 /* ViewMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +439,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,8 +468,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +505,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		16E89E632A4386B100001F73 /* XCRemoteSwiftPackageReference "OpenAIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MarcoDotIO/OpenAIKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		16E89E642A4386B100001F73 /* OpenAIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 16E89E632A4386B100001F73 /* XCRemoteSwiftPackageReference "OpenAIKit" */;
+			productName = OpenAIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 16E89E362A4384A000001F73 /* Project object */;
 }

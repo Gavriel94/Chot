@@ -13,9 +13,15 @@ struct ProfileEditor: View {
     @State var imageSelection: PhotosPickerItem?
     @State private var showDelete = false
     
+    @State private var usernameChange: Bool = false
+    @State private var username: String = ""
+    @State private var notEnoughChars: Bool = false
+    
     var body: some View {
-        NavigationView {
+        VStack {
             List {
+                Text(profile.username)
+                    .font(.title)
                 HStack {
                     Spacer()
                     profile.profileImage
@@ -48,11 +54,25 @@ struct ProfileEditor: View {
                 }
                 
                 HStack {
-                    Text("Username")
+                    Text("Change Username")
                         .bold()
-                    Divider()
-                    TextField("Username", text: $profile.username)
+                    Spacer()
+                    Button {
+                        usernameChange.toggle()
+                    } label: {
+                        Image(systemName: "pencil.circle")
+                            .imageScale(.large)
+                    }.alert("Change Username", isPresented: $usernameChange) {
+                        TextField("Username", text: $username)
+                        Button("Save", action: {
+                            validateUsername()
+                            
+                        })
+                        Button("Cancel", role: .cancel) { }
+                    }
                 }
+                
+                
                 
                 HStack {
 
@@ -96,13 +116,19 @@ struct ProfileEditor: View {
                         showDelete.toggle()
                     } label: {
                         Text("Delete Chats")
+                            .foregroundColor(.red)
                     }
-                    
                 }
             }
             .sheet(isPresented: $showDelete) {
                 DeleteHost()
             }
+        }
+    }
+    
+    func validateUsername() {
+        if(username.count > 3) {
+            profile.username = username
         }
     }
     

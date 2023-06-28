@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 final class ModelData: ObservableObject {
     @Published var profile = ModelProfile.default

@@ -28,20 +28,12 @@ struct DeleteRow: View {
                 Image(systemName: "trash")
             }.alert(isPresented: $confirmAlert) {
                 Alert(title: Text("Delete conversation with \(modelName)?"), message: Text("Chats cannot be retrived"), primaryButton: .cancel(Text("Cancel")), secondaryButton: .destructive(Text("Delete"), action: {
-                    print("Deletion confirmed")
-                    print("Model name \(modelName)")
                     switch modelName {
                     case "Chot":
-                        print("in chot")
-                        print(modelData.profile.chotChat)
-                        print(modelData.profile.chotMessageCounter)
                         modelData.profile.chotChat = []
                         modelData.profile.chotDisplayChat = []
                         modelData.profile.chotMessageCounter = 0
-                        print(modelData.profile.chotChat)
-                        print(modelData.profile.chotMessageCounter)
                         modelData.profile.resetChat = true
-                        print(modelData.profile.aiPersonality)
                     case "Blackbeard":
                         modelData.profile.blackbeardChat = []
                         modelData.profile.blackbeardDisplayChat = []
