@@ -42,6 +42,7 @@ Users select the Chatbot they prefer through the Edit page.
 <br>
 <br>
 Users also have an option in the settings to select how creative they would like the assistant to be using the `temperature` feature.
+<br>
 <img width="444" alt="Creativity" src="https://github.com/Gavriel94/Chot/assets/45106732/1d094a39-507a-4d84-b649-60d3f4ca10bc">
 
 <br>
