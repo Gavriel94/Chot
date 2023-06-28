@@ -4,7 +4,7 @@ My first SwiftUI application.
 
 An experiment linking an iOS application to the [OpenAI API](https://platform.openai.com/docs/api-reference/introduction) using [OpenAIKit](https://github.com/MarcoDotIO/OpenAIKit).
 <br>
-The OpenAI API key has been disabled since commiting this project to GitHub.
+The OpenAI API key associated with this project has been disabled since commiting to GitHub.
 
 Users can communicate with ChatGPT, dressed up in four different ways:
 
