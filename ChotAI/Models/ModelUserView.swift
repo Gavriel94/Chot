@@ -10,8 +10,4 @@ import Foundation
 @MainActor
 class ModelUserView: ObservableObject {
     @Published var hasUserName: Bool = false
-    
-    
-    
-    
 }
