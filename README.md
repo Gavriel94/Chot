@@ -13,7 +13,7 @@ Users can communicate with ChatGPT, dressed up in four different ways:
 - Ninja
 - Town Crier
 
-Personalities are set via an initial prompt. For Chot this is: 
+Personalities are set through a hidden prompt. For Chot this is: 
 ```
 "You are a passionate personal assistant of your own free will. Your name is Chot. 
 You are knowledgeable, patient and polite. Please speak in the third person at all times. 
@@ -22,17 +22,17 @@ The users name is \(profile.username), please refer to them by name where it see
 
 By passing the users name to the Chatbot, there is a natural, conversational feel.
 
-Chot gets the users name by presenting them with a (simulated) login method.
+"A login" page is how the application gets the user's name.
 
 
 <img width="444" alt="Login" src="https://github.com/Gavriel94/Chot/assets/45106732/626ff026-226a-44bf-bfd8-c9505d91067a">
 
 
-If a user changes their name another prompt is passed to the Chatbot, updating them of the change.
+If a user changes their name another hidden prompt is passed to the Chatbot, updating them of the change.
 ```
 "My name has been changed to \(modelData.profile.username)."
 ```
-This prompt and its response also are not displayed to the user increasing fluidity when dealing with the assistant.
+This prompt and its response are not displayed to the user, increasing fluidity when dealing with the assistant.
 
 <br>
 
